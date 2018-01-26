@@ -1,0 +1,38 @@
+html, body {
+  background: lightpink;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.svg-wrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.shape {
+  stroke-dasharray: 140 450;
+  stroke-dashoffset: 300;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: rgb(244, 66, 75,0.5);
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  width: 310px;
+  color: rgb(0,0,0,0.5);
+  position: absolute;
+}
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 360;
+}
